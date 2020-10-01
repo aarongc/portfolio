@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "./about-css-modules.module.css"
-import Container from "../components/container"
+import Layout from "../components/layout"
 
 const User = props => (
     <div className={styles.user}>
@@ -12,9 +12,9 @@ const User = props => (
     </div>
 )
 
-export default function About() {
+export default function AboutCssModules() {
     return (
-        <Container>
+        <Layout>
             <h1>About CSS Modules</h1>
             <p>CSS Modules are cool</p>
             <User
@@ -27,6 +27,6 @@ export default function About() {
                 avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
                 excerpt="I'm Bob Smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
             />
-        </Container>
+        </Layout>
     )
 }
