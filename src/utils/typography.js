@@ -1,7 +1,12 @@
-import Typography from "typography"
-import fairyGateTheme from "typography-theme-fairy-gates"
+import Typography from 'typography'
+import elkGlenTheme from 'typography-theme-elk-glen'
 
-const typography = new Typography(fairyGateTheme)
+elkGlenTheme.overrideStyles = () => ({
+    'h1': {
+        fontSize: '4.5rem'
+    }
+})
 
+const typography = new Typography(elkGlenTheme)
 export const { scale, rhythm, options } = typography
 export default typography

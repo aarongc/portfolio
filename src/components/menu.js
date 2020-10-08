@@ -13,10 +13,10 @@ const Menu = ({ isHomepage }) => {
         <>
             {
                 isHomepage ?
-                    '' : <ListLink to="/">HOME</ListLink>
+                    '' : <ListLink to="/">home</ListLink>
             }            
-            <ListLink to="/about/">ABOUT</ListLink>
-            <ListLink to="/contact/">CONTACT</ListLink>
+            <ListLink to="/about/">about</ListLink>
+            <ListLink to="/contact/">contact</ListLink>
         </>
     )
 }
