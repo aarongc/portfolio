@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../components/layout" 
 
-export default function Home() {
+export default function Home({ location }) {
     return (
-        <Layout>
+        <Layout pathname={location.pathname}>
             <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
             <p>
             What do I like to do? Lots of course but definitely enjoy building

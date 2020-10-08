@@ -1,22 +1,17 @@
 import React from "react"
-import { Link } from "gatsby"
 import Navigation from "./navigation"
 import layoutStyles from "./layout.module.css"
+import Menu from "./menu"
+import { withPrefix } from "gatsby"
 
-const ListLink = props => (
-    <li className={layoutStyles.listItem}>
-        <Link to={props.to}>{props.children}</Link>
-    </li>
-)
+const Layout = ({ pathname, children }) => {
+    const isHomepage = pathname === withPrefix("/")   
 
-export default function Layout({ children }) {
     return (
         <div className={layoutStyles.layout}>
             <header>
                 <Navigation>
-                    <ListLink to="/">Home</ListLink>
-                    <ListLink to="/about/">About</ListLink>
-                    <ListLink to="/contact/">Contact</ListLink>
+                    <Menu isHomepage={isHomepage} />
                 </Navigation>                
             </header>
             <article className={layoutStyles.article}>
@@ -25,3 +20,9 @@ export default function Layout({ children }) {
         </div>
     )
 }
+
+Layout.defaultProps = {
+    location: {}
+}
+
+export default Layout

@@ -9,9 +9,4 @@
         max-width: 650px;
         padding: 0px 1rem;
     }
-
-    .listItem {
-        display: inline-block;
-        margin-right: 1rem;
-    }
 }
