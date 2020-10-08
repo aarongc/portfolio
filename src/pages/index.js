@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout" 
 
-export default function Home({ location }) {
+const Home = ({ location }) => {
     return (
         <Layout pathname={location.pathname}>
             <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
@@ -12,3 +12,5 @@ export default function Home({ location }) {
         </Layout> 
     )
 }
+
+export default Home
