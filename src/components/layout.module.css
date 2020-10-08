@@ -1,0 +1,17 @@
+.article {
+    margin: 3rem auto;
+    padding: 1rem 3rem;
+}
+
+@media ( min-width: 481px ) {
+    .layout {
+        margin: 3rem auto;
+        max-width: 650px;
+        padding: 0px 1rem;
+    }
+
+    .listItem {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
