@@ -18,6 +18,9 @@ module.exports = {
       }, 
       {
         company: `inspire team`
+      }, 
+      {
+        company: `must be new`
       }
     ],
     author: `gatsbyjs`
